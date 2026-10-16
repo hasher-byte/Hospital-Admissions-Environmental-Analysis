@@ -1,0 +1,1761 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.DashboardRoundedCorners.true...DashboardRoundedCorners />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='patient_demographics' inline='true' name='federated.1l3h9u01a2rfs0183z11v1qz9n76' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='patient_demographics' name='textscan.10px4m319a09rb1h3vbko1qm22yt'>
+            <connection class='textscan' directory='C:/Users/harsh/Documents/Projects/Hospital Admissions Data/tableau_data' filename='patient_demographics.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.10px4m319a09rb1h3vbko1qm22yt' name='patient_demographics.csv' table='[patient_demographics#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='age_category' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='total_admissions' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[patient_demographics.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_category]</local-name>
+            <parent-name>[patient_demographics.csv]</parent-name>
+            <remote-alias>age_category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[patient_demographics.csv_8ACBCB59E6204F48960F08CF0917B7EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[patient_demographics.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[patient_demographics.csv_8ACBCB59E6204F48960F08CF0917B7EB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_admissions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_admissions]</local-name>
+            <parent-name>[patient_demographics.csv]</parent-name>
+            <remote-alias>total_admissions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[patient_demographics.csv_8ACBCB59E6204F48960F08CF0917B7EB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='patient_demographics.csv' datatype='table' name='[__tableau_internal_object_id__].[patient_demographics.csv_8ACBCB59E6204F48960F08CF0917B7EB]' role='measure' type='quantitative' />
+      <column caption='Age Category' datatype='string' name='[age_category]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Total Admissions' datatype='integer' name='[total_admissions]' role='measure' type='quantitative' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/harsh/AppData/Local/Temp/TableauTemp/#TableauTemp_1i7xpre0cia6jl10u9v1z0ce2rsq.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2026 06:27:22 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>age_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_category</remote-alias>
+              <ordinal>0</ordinal>
+              <family>patient_demographics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[patient_demographics.csv_8ACBCB59E6204F48960F08CF0917B7EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>patient_demographics.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[patient_demographics.csv_8ACBCB59E6204F48960F08CF0917B7EB]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_admissions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_admissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_admissions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>patient_demographics.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[patient_demographics.csv_8ACBCB59E6204F48960F08CF0917B7EB]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#0a611b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='patient_demographics.csv' id='patient_demographics.csv_8ACBCB59E6204F48960F08CF0917B7EB'>
+            <properties context=''>
+              <relation connection='textscan.10px4m319a09rb1h3vbko1qm22yt' name='patient_demographics.csv' table='[patient_demographics#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='age_category' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='total_admissions' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='monthly_admissions' inline='true' name='federated.0pcziim0bs53nn10bnxrv1912fd1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='monthly_admissions' name='textscan.0vrxvgw1dwytvs18t09u51g0fdgc'>
+            <connection class='textscan' directory='C:/Users/harsh/Documents/Projects/Hospital Admissions Data/tableau_data' filename='monthly_admissions.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0vrxvgw1dwytvs18t09u51g0fdgc' name='monthly_admissions.csv' table='[monthly_admissions#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='month' ordinal='0' />
+            <column datatype='integer' name='total_admissions' ordinal='1' />
+            <column datatype='real' name='average_age' ordinal='2' />
+            <column datatype='real' name='average_length_of_stay' ordinal='3' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[monthly_admissions.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[monthly_admissions.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_admissions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_admissions]</local-name>
+            <parent-name>[monthly_admissions.csv]</parent-name>
+            <remote-alias>total_admissions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_age]</local-name>
+            <parent-name>[monthly_admissions.csv]</parent-name>
+            <remote-alias>average_age</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_length_of_stay</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_length_of_stay]</local-name>
+            <parent-name>[monthly_admissions.csv]</parent-name>
+            <remote-alias>average_length_of_stay</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[avg:average_aqi:qk]&quot;' value='Average AQI' />
+          <alias key='&quot;[federated.0pcziim0bs53nn10bnxrv1912fd1].[avg:average_age:qk]&quot;' value='Average Age (in Years)' />
+          <alias key='&quot;[federated.0pcziim0bs53nn10bnxrv1912fd1].[avg:average_length_of_stay:qk]&quot;' value='Average Length Of Stay (in Days)' />
+        </aliases>
+      </column>
+      <column caption='monthly_admissions.csv' datatype='table' name='[__tableau_internal_object_id__].[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]' role='measure' type='quantitative' />
+      <column caption='Average Age' datatype='real' name='[average_age]' role='measure' type='quantitative' />
+      <column caption='Average Length Of Stay' datatype='real' name='[average_length_of_stay]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+      <column caption='Total Admissions' datatype='integer' name='[total_admissions]' role='measure' type='quantitative' />
+      <column-instance column='[average_age]' derivation='Avg' name='[avg:average_age:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_length_of_stay]' derivation='Avg' name='[avg:average_length_of_stay:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[month]' derivation='Month-Trunc' name='[tmn:month:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (MONTH(Month))' hidden='true' name='[Action (MONTH(Month))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:month:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/harsh/AppData/Local/Temp/TableauTemp/#TableauTemp_06snng71a7ybgo1gqucf70vat3z9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2026 06:56:36 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>0</ordinal>
+              <family>monthly_admissions.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_admissions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_admissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_admissions</remote-alias>
+              <ordinal>1</ordinal>
+              <family>monthly_admissions.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_age</remote-alias>
+              <ordinal>2</ordinal>
+              <family>monthly_admissions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_length_of_stay</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_length_of_stay]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_length_of_stay</remote-alias>
+              <ordinal>3</ordinal>
+              <family>monthly_admissions.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='federated.0bfq1n50kjvmmn1f2702k1afdn3d'>
+        <column caption='Average Aqi' datatype='real' name='[average_aqi]' role='measure' type='quantitative' />
+        <column-instance column='[average_aqi]' derivation='Avg' name='[avg:average_aqi:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='monthly_admissions.csv' id='monthly_admissions.csv_79598088CFA04CFFBC3C6F4FBFE008D7'>
+            <properties context=''>
+              <relation connection='textscan.0vrxvgw1dwytvs18t09u51g0fdgc' name='monthly_admissions.csv' table='[monthly_admissions#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='month' ordinal='0' />
+                  <column datatype='integer' name='total_admissions' ordinal='1' />
+                  <column datatype='real' name='average_age' ordinal='2' />
+                  <column datatype='real' name='average_length_of_stay' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='admission_outcomes' inline='true' name='federated.0v3mika0jkzu6c10l0gsw0py2cgc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='admission_outcomes' name='textscan.0gvomw708mtzay1ggvrr90q92q9f'>
+            <connection class='textscan' directory='C:/Users/harsh/Documents/Projects/Hospital Admissions Data/tableau_data' filename='admission_outcomes.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0gvomw708mtzay1ggvrr90q92q9f' name='admission_outcomes.csv' table='[admission_outcomes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='outcome' ordinal='0' />
+            <column datatype='integer' name='total_admissions' ordinal='1' />
+            <column datatype='real' name='percentage_of_admissions' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[admission_outcomes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>outcome</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[outcome]</local-name>
+            <parent-name>[admission_outcomes.csv]</parent-name>
+            <remote-alias>outcome</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[admission_outcomes.csv_F816B5388AC14768BB062A97F03CEE7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_admissions</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_admissions]</local-name>
+            <parent-name>[admission_outcomes.csv]</parent-name>
+            <remote-alias>total_admissions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[admission_outcomes.csv_F816B5388AC14768BB062A97F03CEE7F]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>percentage_of_admissions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[percentage_of_admissions]</local-name>
+            <parent-name>[admission_outcomes.csv]</parent-name>
+            <remote-alias>percentage_of_admissions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[admission_outcomes.csv_F816B5388AC14768BB062A97F03CEE7F]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='admission_outcomes.csv' datatype='table' name='[__tableau_internal_object_id__].[admission_outcomes.csv_F816B5388AC14768BB062A97F03CEE7F]' role='measure' type='quantitative' />
+      <column caption='Outcome' datatype='string' name='[outcome]' role='dimension' type='nominal' />
+      <column caption='Percentage Of Admissions' datatype='real' name='[percentage_of_admissions]' role='measure' type='quantitative' />
+      <column caption='Total Admissions' datatype='integer' name='[total_admissions]' role='measure' type='quantitative' />
+      <column-instance column='[outcome]' derivation='None' name='[none:outcome:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/harsh/AppData/Local/Temp/TableauTemp/#TableauTemp_0pkxd2g0xeac4w19gpob7025j6td.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2026 07:07:45 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>outcome</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[outcome]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>outcome</remote-alias>
+              <ordinal>0</ordinal>
+              <family>admission_outcomes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[admission_outcomes.csv_F816B5388AC14768BB062A97F03CEE7F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_admissions</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_admissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_admissions</remote-alias>
+              <ordinal>1</ordinal>
+              <family>admission_outcomes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[admission_outcomes.csv_F816B5388AC14768BB062A97F03CEE7F]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>percentage_of_admissions</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[percentage_of_admissions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>percentage_of_admissions</remote-alias>
+              <ordinal>2</ordinal>
+              <family>admission_outcomes.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[admission_outcomes.csv_F816B5388AC14768BB062A97F03CEE7F]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:outcome:nk]' type='palette'>
+            <map to='#0a611b'>
+              <bucket>&quot;DAMA&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;DISCHARGE&quot;</bucket>
+            </map>
+            <map to='#f56580'>
+              <bucket>&quot;EXPIRY&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='admission_outcomes.csv' id='admission_outcomes.csv_F816B5388AC14768BB062A97F03CEE7F'>
+            <properties context=''>
+              <relation connection='textscan.0gvomw708mtzay1ggvrr90q92q9f' name='admission_outcomes.csv' table='[admission_outcomes#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='outcome' ordinal='0' />
+                  <column datatype='integer' name='total_admissions' ordinal='1' />
+                  <column datatype='real' name='percentage_of_admissions' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='monthly_pollution' inline='true' name='federated.0bfq1n50kjvmmn1f2702k1afdn3d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='monthly_pollution' name='textscan.1yc1m7s0nks0o11g030vm0ubgjty'>
+            <connection class='textscan' directory='C:/Users/harsh/Documents/Projects/Hospital Admissions Data/tableau_data' filename='monthly_pollution.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1yc1m7s0nks0o11g030vm0ubgjty' name='monthly_pollution.csv' table='[monthly_pollution#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='date' name='month' ordinal='0' />
+            <column datatype='real' name='average_aqi' ordinal='1' />
+            <column datatype='real' name='average_pm25' ordinal='2' />
+            <column datatype='real' name='average_pm10' ordinal='3' />
+            <column datatype='real' name='average_no2' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[monthly_pollution.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[monthly_pollution.csv]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_aqi</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_aqi]</local-name>
+            <parent-name>[monthly_pollution.csv]</parent-name>
+            <remote-alias>average_aqi</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_pm25</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_pm25]</local-name>
+            <parent-name>[monthly_pollution.csv]</parent-name>
+            <remote-alias>average_pm25</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_pm10</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_pm10]</local-name>
+            <parent-name>[monthly_pollution.csv]</parent-name>
+            <remote-alias>average_pm10</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_no2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_no2]</local-name>
+            <parent-name>[monthly_pollution.csv]</parent-name>
+            <remote-alias>average_no2</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='monthly_pollution.csv' datatype='table' name='[__tableau_internal_object_id__].[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]' role='measure' type='quantitative' />
+      <column caption='Average Aqi' datatype='real' name='[average_aqi]' role='measure' type='quantitative' />
+      <column caption='Average No2' datatype='real' name='[average_no2]' role='measure' type='quantitative' />
+      <column caption='Average Pm10' datatype='real' name='[average_pm10]' role='measure' type='quantitative' />
+      <column caption='Average Pm25' datatype='real' name='[average_pm25]' role='measure' type='quantitative' />
+      <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+      <column-instance column='[__tableau_internal_object_id__].[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_aqi]' derivation='Avg' name='[avg:average_aqi:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_aqi]' derivation='Sum' name='[sum:average_aqi:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_no2]' derivation='Sum' name='[sum:average_no2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_pm10]' derivation='Sum' name='[sum:average_pm10:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[average_pm25]' derivation='Sum' name='[sum:average_pm25:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[month]' derivation='Month-Trunc' name='[tmn:month:ok]' pivot='key' type='ordinal' />
+      <group caption='Action (MONTH(Month))' hidden='true' name='[Action (MONTH(Month))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[tmn:month:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/harsh/AppData/Local/Temp/TableauTemp/#TableauTemp_12gux4f0mx4sea1dixh1d0mxe0hp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/15/2026 07:27:13 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>month</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[month]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>month</remote-alias>
+              <ordinal>0</ordinal>
+              <family>monthly_pollution.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_aqi</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_aqi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_aqi</remote-alias>
+              <ordinal>1</ordinal>
+              <family>monthly_pollution.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_pm25</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_pm25]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_pm25</remote-alias>
+              <ordinal>2</ordinal>
+              <family>monthly_pollution.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_pm10</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_pm10]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_pm10</remote-alias>
+              <ordinal>3</ordinal>
+              <family>monthly_pollution.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_no2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_no2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_no2</remote-alias>
+              <ordinal>4</ordinal>
+              <family>monthly_pollution.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#0a611b'>
+              <bucket>&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm10:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[__tableau_internal_object_id__].[cnt:monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_no2:qk]&quot;</bucket>
+            </map>
+            <map to='#c11c2f'>
+              <bucket>&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm25:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d]&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[avg:average_aqi:qk]&quot;</bucket>
+            </map>
+            <map to='#f4284e'>
+              <bucket>&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_aqi:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='monthly_pollution.csv' id='monthly_pollution.csv_B8E2DDA73973401AAC44A855EE5CFE19'>
+            <properties context=''>
+              <relation connection='textscan.1yc1m7s0nks0o11g030vm0ubgjty' name='monthly_pollution.csv' table='[monthly_pollution#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='date' name='month' ordinal='0' />
+                  <column datatype='real' name='average_aqi' ordinal='1' />
+                  <column datatype='real' name='average_pm25' ordinal='2' />
+                  <column datatype='real' name='average_pm10' ordinal='3' />
+                  <column datatype='real' name='average_no2' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_701BBD64957244C5BEC97D02203589EE]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Hospital Admissions &amp; Environmental Analysis' type='sheet' worksheet='Monthly Admissions Trend' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Hospital Admissions &amp; Environmental Analysis' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Admission Outcomes'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='admission_outcomes' name='federated.0v3mika0jkzu6c10l0gsw0py2cgc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0v3mika0jkzu6c10l0gsw0py2cgc'>
+            <column-instance column='[outcome]' derivation='None' name='[none:outcome:nk]' pivot='key' type='nominal' />
+            <column caption='Outcome' datatype='string' name='[outcome]' role='dimension' type='nominal' />
+            <column caption='Percentage Of Admissions' datatype='real' name='[percentage_of_admissions]' role='measure' type='quantitative' />
+            <column-instance column='[percentage_of_admissions]' derivation='Sum' name='[sum:percentage_of_admissions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[total_admissions]' derivation='Sum' name='[sum:total_admissions:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Admissions' datatype='integer' name='[total_admissions]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[none:outcome:nk]' />
+              <wedge-size column='[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:total_admissions:qk]' />
+              <text column='[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[none:outcome:nk]' />
+              <text column='[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:percentage_of_admissions:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontalignment='1' fontsize='8'><![CDATA[<[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[none:outcome:nk]>]]></run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontsize='8'><![CDATA[Percentage: <[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:percentage_of_admissions:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-orientation' value='0' />
+                <format attr='text-align' value='left' />
+                <format attr='vertical-align' value='top' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.5272375345230103' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[none:outcome:nk]</field>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:percentage_of_admissions:qk]</field>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:total_admissions:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;EXPIRY&quot;</value>
+                <value>7.0099999999999998</value>
+                <value>1105</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-91' y='34' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[none:outcome:nk]</field>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:percentage_of_admissions:qk]</field>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:total_admissions:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DAMA&quot;</value>
+                <value>5.6899999999999995</value>
+                <value>896</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='100' y='35' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[none:outcome:nk]</field>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:percentage_of_admissions:qk]</field>
+                  <field>[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[sum:total_admissions:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;DISCHARGE&quot;</value>
+                <value>87.299999999999997</value>
+                <value>13756</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='140' y='6' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{03FDEACF-AE17-44BE-AD06-6447339F8300}' />
+    </worksheet>
+    <worksheet name='Admissions by Age Group'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#1b1b1b' fontsize='10'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='patient_demographics' name='federated.1l3h9u01a2rfs0183z11v1qz9n76' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1l3h9u01a2rfs0183z11v1qz9n76'>
+            <column caption='Age Category' datatype='string' name='[age_category]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[age_category]' derivation='None' name='[none:age_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[total_admissions]' derivation='Sum' name='[sum:total_admissions:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Admissions' datatype='integer' name='[total_admissions]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1l3h9u01a2rfs0183z11v1qz9n76].[sum:total_admissions:qk]' field-type='quantitative' minor-origin='0' minor-spacing='100.0' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1l3h9u01a2rfs0183z11v1qz9n76].[none:age_category:nk]' value='46' />
+            <format attr='height' field='[federated.1l3h9u01a2rfs0183z11v1qz9n76].[none:gender:nk]' value='43' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1l3h9u01a2rfs0183z11v1qz9n76].[none:age_category:nk]' value='72' />
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+          </style-rule>
+          <style-rule element='caption'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1l3h9u01a2rfs0183z11v1qz9n76].[none:gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#d37295' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='431' />
+                <format attr='maxwidth' value='431' />
+                <format attr='minheight' value='171' />
+                <format attr='maxheight' value='171' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1l3h9u01a2rfs0183z11v1qz9n76].[none:age_category:nk] / [federated.1l3h9u01a2rfs0183z11v1qz9n76].[none:gender:nk])</rows>
+        <cols>[federated.1l3h9u01a2rfs0183z11v1qz9n76].[sum:total_admissions:qk]</cols>
+      </table>
+      <simple-id uuid='{11FEE616-6EAE-4B70-8CED-D47EC5EA55BB}' />
+    </worksheet>
+    <worksheet name='KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_admissions' name='federated.0pcziim0bs53nn10bnxrv1912fd1' />
+            <datasource caption='monthly_pollution' name='federated.0bfq1n50kjvmmn1f2702k1afdn3d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bfq1n50kjvmmn1f2702k1afdn3d'>
+            <column caption='Average Aqi' datatype='real' name='[average_aqi]' role='measure' type='quantitative' />
+            <column-instance column='[average_aqi]' derivation='Avg' name='[avg:average_aqi:qk]' pivot='key' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0pcziim0bs53nn10bnxrv1912fd1'>
+            <column caption='Average Age' datatype='real' name='[average_age]' role='measure' type='quantitative' />
+            <column caption='Average Length Of Stay' datatype='real' name='[average_length_of_stay]' role='measure' type='quantitative' />
+            <column-instance column='[average_age]' derivation='Avg' name='[avg:average_age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_length_of_stay]' derivation='Avg' name='[avg:average_length_of_stay:qk]' pivot='key' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column-instance column='[total_admissions]' derivation='Sum' name='[sum:total_admissions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[month]' derivation='Month-Trunc' name='[tmn:month:ok]' pivot='key' type='ordinal' />
+            <column caption='Total Admissions' datatype='integer' name='[total_admissions]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0pcziim0bs53nn10bnxrv1912fd1].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pcziim0bs53nn10bnxrv1912fd1].[sum:total_admissions:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pcziim0bs53nn10bnxrv1912fd1].[avg:average_age:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0pcziim0bs53nn10bnxrv1912fd1].[avg:average_length_of_stay:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[avg:average_aqi:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0pcziim0bs53nn10bnxrv1912fd1].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0pcziim0bs53nn10bnxrv1912fd1].[sum:total_admissions:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pcziim0bs53nn10bnxrv1912fd1].[avg:average_age:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0pcziim0bs53nn10bnxrv1912fd1].[avg:average_length_of_stay:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[avg:average_aqi:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0pcziim0bs53nn10bnxrv1912fd1].[Action (MONTH(Month))]'>
+            <groupfilter function='level-members' level='[tmn:month:ok]' user:ui-action-filter='[Action1_701BBD64957244C5BEC97D02203589EE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0pcziim0bs53nn10bnxrv1912fd1].[:Measure Names]</column>
+            <column>[federated.0pcziim0bs53nn10bnxrv1912fd1].[Action (MONTH(Month))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0pcziim0bs53nn10bnxrv1912fd1].[:Measure Names]' value='283' />
+            <format attr='height' value='41' />
+            <format attr='border-style' scope='cols' value='solid' />
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='11' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0pcziim0bs53nn10bnxrv1912fd1].[:Measure Names]' value='32' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#000000' />
+            <format attr='font-size' value='9' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='2' />
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='div-level' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='cols' value='1' />
+            <format attr='line-visibility' scope='cols' value='on' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.0pcziim0bs53nn10bnxrv1912fd1].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0pcziim0bs53nn10bnxrv1912fd1].[Multiple Values]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+                <format attr='wrap' value='off' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='size' value='1.4392818212509155' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0pcziim0bs53nn10bnxrv1912fd1].[:Measure Names]</cols>
+        <join-lod-include-overrides>
+          <column>[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[month]</column>
+        </join-lod-include-overrides>
+      </table>
+      <simple-id uuid='{65E086A0-E367-43DA-B72A-2542C2787280}' />
+    </worksheet>
+    <worksheet name='Monthly Admissions Trend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='10'>Monthly Hospital Admissions</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_admissions' name='federated.0pcziim0bs53nn10bnxrv1912fd1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pcziim0bs53nn10bnxrv1912fd1'>
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column-instance column='[total_admissions]' derivation='Sum' name='[sum:total_admissions:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[month]' derivation='Month-Trunc' name='[tmn:month:qk]' pivot='key' type='quantitative' />
+            <column caption='Total Admissions' datatype='integer' name='[total_admissions]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0pcziim0bs53nn10bnxrv1912fd1].[tmn:month:qk]' value='72' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='417' />
+                <format attr='maxwidth' value='417' />
+                <format attr='minheight' value='196' />
+                <format attr='maxheight' value='196' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pcziim0bs53nn10bnxrv1912fd1].[sum:total_admissions:qk]</rows>
+        <cols>[federated.0pcziim0bs53nn10bnxrv1912fd1].[tmn:month:qk]</cols>
+      </table>
+      <simple-id uuid='{E68F8994-3306-4DBF-BD5C-7DBA8E633A1F}' />
+    </worksheet>
+    <worksheet name='Monthly Pollution Trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='10'>Monthly Average Air Quality Index (AQI)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_pollution' name='federated.0bfq1n50kjvmmn1f2702k1afdn3d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bfq1n50kjvmmn1f2702k1afdn3d'>
+            <column caption='Average Aqi' datatype='real' name='[average_aqi]' role='measure' type='quantitative' />
+            <column caption='Average No2' datatype='real' name='[average_no2]' role='measure' type='quantitative' />
+            <column caption='Average Pm10' datatype='real' name='[average_pm10]' role='measure' type='quantitative' />
+            <column caption='Average Pm25' datatype='real' name='[average_pm25]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column-instance column='[average_aqi]' derivation='Sum' name='[sum:average_aqi:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_no2]' derivation='Sum' name='[sum:average_no2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_pm10]' derivation='Sum' name='[sum:average_pm10:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_pm25]' derivation='Sum' name='[sum:average_pm25:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[month]' derivation='Month-Trunc' name='[tmn:month:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[month]' derivation='Month-Trunc' name='[tmn:month:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_aqi:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_no2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm10:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm25:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[Action (MONTH(Month))]'>
+            <groupfilter function='level-members' level='[tmn:month:ok]' user:ui-action-filter='[Action1_701BBD64957244C5BEC97D02203589EE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[:Measure Names]</column>
+            <column>[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[Action (MONTH(Month))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_aqi:qk]' value='80' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_aqi:qk]</rows>
+        <cols>[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[tmn:month:qk]</cols>
+      </table>
+      <simple-id uuid='{1D708CB4-320D-4372-8000-C0E6CD0F7A99}' />
+    </worksheet>
+    <worksheet name='Particulate Matter Trends'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='10'>PM2.5 vs PM10 Trends</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='monthly_pollution' name='federated.0bfq1n50kjvmmn1f2702k1afdn3d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bfq1n50kjvmmn1f2702k1afdn3d'>
+            <column caption='Average Pm10' datatype='real' name='[average_pm10]' role='measure' type='quantitative' />
+            <column caption='Average Pm25' datatype='real' name='[average_pm25]' role='measure' type='quantitative' />
+            <column caption='Month' datatype='date' name='[month]' role='dimension' type='ordinal' />
+            <column-instance column='[average_pm10]' derivation='Sum' name='[sum:average_pm10:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_pm25]' derivation='Sum' name='[sum:average_pm25:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[month]' derivation='Month-Trunc' name='[tmn:month:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[month]' derivation='Month-Trunc' name='[tmn:month:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[Action (MONTH(Month))]'>
+            <groupfilter function='level-members' level='[tmn:month:ok]' user:ui-action-filter='[Action1_701BBD64957244C5BEC97D02203589EE]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[Action (MONTH(Month))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm25:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm10:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm25:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm10:qk] + [federated.0bfq1n50kjvmmn1f2702k1afdn3d].[sum:average_pm25:qk])</rows>
+        <cols>[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[tmn:month:qk]</cols>
+      </table>
+      <simple-id uuid='{42EDA1C0-35BD-4506-841E-3390CB2E5B30}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Hospital Admissions &amp; Environmental Analysis'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='15'>Hospital Admissions &amp; Environmental Analysis</run>
+            <run fontalignment='1'>Æ&#10;</run>
+            <run fontalignment='1' fontcolor='#000000' fontsize='10'>Hero DMC Heart Institute · 2017–2019</run>
+            <run fontalignment='1'>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#e6e6e6' />
+        </style-rule>
+      </style>
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98014' id='28' param='horz' type-v2='layout-flow' w='99002' x='499' y='993'>
+            <zone h='98014' id='14' param='vert' type-v2='layout-flow' w='99002' x='499' y='993'>
+              <zone fixed-size='74' h='10174' id='15' is-fixed='true' type-v2='title' w='99002' x='499' y='993'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10174' id='30' name='KPI' show-title='false' w='99002' x='499' y='11167'>
+                <layout-cache cell-count-w='4' fixed-size-h='74' type-h='fixed' type-w='cell' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='solid' />
+                  <format attr='border-width' value='1' />
+                  <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='2' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='77666' id='12' param='vert' type-v2='layout-flow' w='99002' x='499' y='21341'>
+                <zone h='77666' id='10' type-v2='layout-basic' w='99002' x='499' y='21341'>
+                  <zone h='39363' id='7' param='horz' type-v2='layout-flow' w='30421' x='499' y='21341'>
+                    <zone h='39363' id='18' name='Monthly Admissions Trend' w='30421' x='499' y='21341'>
+                      <layout-cache has-max-size-h='true' has-max-size-w='true' maxheight='320' maxwidth='495' minheight='320' minwidth='495' type-h='scalable' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='solid' />
+                        <format attr='border-width' value='1' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone h='38303' id='8' param='horz' type-v2='layout-flow' w='99002' x='499' y='60704'>
+                    <zone fixed-size='730' h='38303' id='23' is-fixed='true' name='Monthly Pollution Trends' w='46010' x='499' y='60704'>
+                      <layout-cache minheight='224' minwidth='180' type-h='scalable' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='solid' />
+                        <format attr='border-width' value='1' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='38303' id='25' param='vert' type-v2='layout-flow' w='52992' x='46509' y='60704'>
+                      <zone h='38303' id='26' name='Particulate Matter Trends' w='52992' x='46509' y='60704'>
+                        <layout-cache minheight='215' minwidth='258' type-h='scalable' type-w='scalable' />
+                        <zone-style>
+                          <format attr='border-color' value='#000000' />
+                          <format attr='border-style' value='solid' />
+                          <format attr='border-width' value='1' />
+                          <format attr='margin' value='4' />
+                          <format attr='padding' value='3' />
+                        </zone-style>
+                      </zone>
+                    </zone>
+                  </zone>
+                  <zone h='39363' id='17' param='vert' type-v2='layout-flow' w='36258' x='30920' y='21341'>
+                    <zone h='39353' id='19' name='Admissions by Age Group' w='36258' x='30920' y='21341'>
+                      <layout-cache cell-count-h='12' non-cell-size-h='134' type-h='cell' type-w='fixed' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='solid' />
+                        <format attr='border-width' value='1' />
+                        <format attr='margin' value='4' />
+                        <format attr='padding' value='0' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                  <zone fixed-size='290' h='39363' id='21' is-fixed='true' name='Admission Outcomes' w='32323' x='67178' y='21341'>
+                    <layout-cache type-h='cell' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <layout-options>
+            <title>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='15'>Hospital Admissions &amp; Environmental Analysis</run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run fontalignment='1' fontcolor='#000000' fontsize='10'>Hero DMC Heart Institute · 2017–2019</run>
+                <run fontalignment='1'>Æ&#10;&#10;</run>
+              </formatted-text>
+            </title>
+          </layout-options>
+          <size maxheight='1600' minheight='1600' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='34' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97872' id='33' param='vert' type-v2='layout-flow' w='98984' x='508' y='1064'>
+                <zone fixed-size='74' h='10904' id='15' type-v2='title' w='98984' x='508' y='1064'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='77' h='10904' id='30' is-fixed='true' name='KPI' show-title='false' w='98984' x='508' y='11968'>
+                  <layout-cache cell-count-w='4' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <_.fcp.DashboardRoundedCorners.true...format attr='corner-radius' value='2' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38552' id='18' is-fixed='true' name='Monthly Admissions Trend' w='30416' x='508' y='22872'>
+                  <layout-cache has-max-size-h='true' has-max-size-w='true' maxheight='320' maxwidth='495' minheight='320' minwidth='495' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38543' id='19' is-fixed='true' name='Admissions by Age Group' w='36251' x='30924' y='22872'>
+                  <layout-cache cell-count-h='12' non-cell-size-h='134' type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='38552' id='21' is-fixed='true' name='Admission Outcomes' w='32317' x='67175' y='22872'>
+                  <layout-cache type-h='cell' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37512' id='23' is-fixed='true' name='Monthly Pollution Trends' w='46857' x='508' y='61424'>
+                  <layout-cache minheight='224' minwidth='180' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='37512' id='26' is-fixed='true' name='Particulate Matter Trends' w='52127' x='47365' y='61424'>
+                  <layout-cache minheight='215' minwidth='258' type-h='scalable' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{88F3D6E1-2CE0-49CA-8CA3-D96A39C92118}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' show-side-pane='false' source-height='137'>
+    <window class='worksheet' name='Monthly Admissions Trend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{017D9A26-DBBC-4A73-A772-FDC50B0A7B52}' />
+    </window>
+    <window class='worksheet' name='Admissions by Age Group'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1l3h9u01a2rfs0183z11v1qz9n76].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{550DB110-FC17-41D0-BCDC-6052E3D54498}' />
+    </window>
+    <window class='worksheet' name='Admission Outcomes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0v3mika0jkzu6c10l0gsw0py2cgc].[none:outcome:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{C15CF09B-BA25-4152-9226-CE054AD1B126}' />
+    </window>
+    <window class='worksheet' name='Monthly Pollution Trends'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{4D38E521-3B00-4CEE-820C-DB62C3C0154F}' />
+    </window>
+    <window class='worksheet' name='Particulate Matter Trends'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0bfq1n50kjvmmn1f2702k1afdn3d].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{97AE27F7-AFCF-43F3-9C6F-5CBD3238C802}' />
+    </window>
+    <window class='worksheet' name='KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{71CD607D-DBCF-4455-96FC-3A549E40744E}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Hospital Admissions &amp; Environmental Analysis'>
+      <viewpoints>
+        <viewpoint name='Admission Outcomes'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Admissions by Age Group'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='KPI'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Monthly Admissions Trend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Monthly Pollution Trends' />
+        <viewpoint name='Particulate Matter Trends'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{08642296-C627-449A-B2A8-A16A305D5F3B}' />
+    </window>
+  </windows>
+</workbook>
