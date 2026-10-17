@@ -105,8 +105,7 @@ Hospital Admissions Environmental Analysis
 ├── documentation
 │   └── Hospital Admissions Data Documentation.docx
 │
-├── README.md
-└── requirements.txt
+└── README.md
 ```
 
 
