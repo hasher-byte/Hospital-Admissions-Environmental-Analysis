@@ -129,4 +129,40 @@ The Tableau Public dashboard combines key findings from the SQL analysis into a 
 - Average Length of Stay
 - Average AQI
 
-![image alt](tableau/Hospital Admissions & Environmental Analysis.png)
+**Dashboard Preview:**
+
+<img width="1880" height="804" alt="Hospital Admissions   Environmental Analysis" src="https://github.com/user-attachments/assets/9dc53ef5-08a2-4e1c-a575-7e599425184f" />
+
+
+## ▶️ How to Run
+
+### 1. Clone the repository
+git clone https://github.com/hasher-byte/FIFA-World-Cup-Historical-Analysis.git
+
+### 2. Navigate to the project directory
+cd Hospital-Admissions-Environmental-Analysis
+
+### 3. Open the Excel workbook
+In Excel, open the Power Query workbook to review the data preparation and transformation process.
+
+### 4. Set up PostgreSQL
+Create the hospital_admissions_analytics database and import the required datasets into PostgreSQL.
+
+Run the SQL scripts in the appropriate order to prepare the cleaned tables, perform analysis, and create the Tableau-ready views.
+
+### 5. Open the Tableau workbook
+Open the .twb file in Tableau Public or a compatible Tableau application.
+
+Update the data-source paths if required. Ensure that the required CSV files or extracts are available.
+
+Alternatively, view the published Tableau Public dashboard using the link below.
+
+🔗 Tableau Public Dashboard: [https://public.tableau.com/views/HospitalAdmissionsEnvironmentalAnalysis_/HospitalAdmissionsEnvironmentalAnalysis?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]
+
+
+## 👨‍💻 Author
+
+**Harshit Singh**\
+Aspiring Data Analyst\
+✉️ Email: harshitsingh0801@gmail.com\
+🔗 [LinkedIn](https://www.linkedin.com/in/harshit-singh-a08b681bb/)
