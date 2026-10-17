@@ -137,7 +137,7 @@ The Tableau Public dashboard combines key findings from the SQL analysis into a 
 ## ▶️ How to Run
 
 ### 1. Clone the repository
-git clone https://github.com/hasher-byte/FIFA-World-Cup-Historical-Analysis.git
+git clone https://github.com/hasher-byte/Hospital-Admissions-Environmental-Analysis.git
 
 ### 2. Navigate to the project directory
 cd Hospital-Admissions-Environmental-Analysis
