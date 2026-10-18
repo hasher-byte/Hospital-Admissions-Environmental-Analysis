@@ -1,4 +1,4 @@
-# Hospital Admissions Environmental Analysis
+# Healthcare and Climate Analytics
 
 The project uses hospital admissions, mortality, and environmental datasets related to Hero DMC Heart Institute to analyze patient demographics, admission patterns, hospital outcomes, and air pollution trends.
 
@@ -67,7 +67,7 @@ The dataset was obtained from Kaggle:
 
 ## Project Structure
 ```
-Hospital Admissions Environmental Analysis
+Healthcare and Climate Analytics
 │
 ├── data
 │   ├── HDHI Admission data.csv
