@@ -156,7 +156,7 @@ Update the data-source paths if required. Ensure that the required CSV files or 
 
 Alternatively, view the published Tableau Public dashboard using the link below.
 
-🔗 Tableau Public Dashboard: [https://public.tableau.com/views/HospitalAdmissionsEnvironmentalAnalysis_/HospitalAdmissionsEnvironmentalAnalysis?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link]
+🔗 Tableau Public Dashboard: [https://public.tableau.com/app/profile/harshit.singh5794/viz/HospitalAdmissionsEnvironmentalAnalysis/HospitalAdmissionsEnvironmentalAnalysis?publish=yes]
 
 
 ## 👨‍💻 Author
