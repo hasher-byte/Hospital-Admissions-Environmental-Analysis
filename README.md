@@ -130,11 +130,8 @@ The Tableau Public dashboard combines key findings from the SQL analysis into a 
 
 **Dashboard Preview:**
 
-<img width="1880" height="804" alt="Hospital Admissions   Environmental Analysis" src="https://github.com/user-attachments/assets/9dc53ef5-08a2-4e1c-a575-7e599425184f" />
+<img width="1568" height="747" alt="Hospital Admissions   Environmental Analysis" src="https://github.com/user-attachments/assets/d9c5c99b-80c4-4e6a-831d-4765b4c5ff9e" />
 
-![Banking Performance Dashboard](tableau/banking_dashboard.png)
-
-[View Interactive Dashboard](https://public.tableau.com/app/profile/harshit.singh5794/viz/HospitalAdmissionsEnvironmentalAnalysis/HospitalAdmissionsEnvironmentalAnalysis?publish=yes)
 
 ## ▶️ How to Run
 
